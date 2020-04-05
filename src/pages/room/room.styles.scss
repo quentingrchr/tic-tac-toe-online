@@ -1,0 +1,60 @@
+.roomPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  width: 100vw;
+
+  .text {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 300;
+    em {
+      font-weight: 600;
+    }
+  }
+
+  .create-container,
+  .join-container {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: center;
+    a {
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+    }
+  }
+
+  .form {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-self: center;
+  }
+}
+
+.input-text {
+  background-color: #f4f4f4;
+  color: #27476e;
+  width: 268px;
+  height: 64px;
+  border-radius: 10px;
+  font-size: 24px;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  padding-left: 20px;
+}
+
+::placeholder {
+  color: #27476e;
+  font-size: 24px;
+  font-style: italic;
+  margin: 0 auto;
+  text-transform: initial;
+  font-weight: 100;
+}

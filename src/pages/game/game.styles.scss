@@ -1,0 +1,33 @@
+.gamePage {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  width: 100vw;
+}
+
+.players-container,
+.scores-container {
+  flex-basis: 25%;
+}
+
+.grid-container {
+  flex-basis: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.players-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.scores-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}

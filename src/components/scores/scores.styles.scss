@@ -1,0 +1,11 @@
+.scores {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .score {
+    text-decoration: underline;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 38px;
+  }
+}

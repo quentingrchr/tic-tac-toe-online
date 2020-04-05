@@ -1,0 +1,27 @@
+.github {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: flex-end;
+  p {
+    margin-right: 10px;
+  }
+
+  a svg {
+    transition: all 0.1s ease;
+    border-radius: 50%;
+  }
+  a:hover {
+    svg {
+      transform: translateY(-5px);
+      box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.397);
+    }
+  }
+
+  a:active {
+    svg {
+      transform: translateY(0px);
+      box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.397);
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.grid {
+  width: 645px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  .cell {
+    flex-basis: 200px;
+    border: 8px solid white;
+    height: 200px;
+    transition: 0.05s ease;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.219);
+    }
+
+    &:nth-child(1) {
+      border-top: none;
+      border-left: none;
+    }
+
+    &:nth-child(2) {
+      border-top: none;
+    }
+
+    &:nth-child(3) {
+      border-top: none;
+      border-right: none;
+    }
+
+    &:nth-child(4) {
+      border-left: none;
+    }
+
+    &:nth-child(6) {
+      border-right: none;
+    }
+
+    &:nth-child(7) {
+      border-bottom: none;
+      border-left: none;
+    }
+
+    &:nth-child(8) {
+      border-bottom: none;
+    }
+
+    &:nth-child(9) {
+      border-bottom: none;
+      border-right: none;
+    }
+  }
+
+  .scores-container {
+  }
+}
