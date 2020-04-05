@@ -13,10 +13,14 @@
     em {
       font-weight: 600;
     }
+    strong {
+      background-color: #e3a634;
+    }
   }
 
   .create-container,
   .join-container {
+    width: 600px;
     flex-basis: 50%;
     display: flex;
     flex-direction: column;
