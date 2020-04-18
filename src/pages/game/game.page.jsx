@@ -146,7 +146,8 @@ const GamePage = ({ location }) => {
           setDrawToggle(false);
         }}
       >
-        DRAW
+        <h2>DRAW</h2>
+        <p>Click anywhere to launch the next round</p>
       </div>
       <div
         className={crossToggle ? "round active" : "round "}
