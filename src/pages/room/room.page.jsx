@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-
+// CROSS = 1 --> CIRCLE = 2
 import "./room.styles.scss";
 import Button from "../../components/button/button.component";
 import Github from "../../components/github/github.component";
 import ClickToCopy from "../../components/click-to-copy/click-to-copy.component";
-import makeRoomId from "../../utils";
+import { makeRoomId } from "../../utils";
 
 const RoomPage = () => {
   const [room, setRoom] = useState("");
   const [newRoom, setnewRoom] = useState("");
 
   useEffect(() => {
-    setnewRoom(makeRoomId(8));
+    setnewRoom(makeRoomId(8).toUpperCase());
   }, []);
 
   return (

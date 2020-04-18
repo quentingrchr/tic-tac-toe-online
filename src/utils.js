@@ -1,4 +1,4 @@
-const makeRoomId = (length) => {
+export const makeRoomId = (length) => {
   var result = "";
   var characters =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -6,7 +6,49 @@ const makeRoomId = (length) => {
   for (var i = 0; i < length; i++) {
     result += characters.charAt(Math.floor(Math.random() * charactersLength));
   }
-  return result;
+  return result.toUpperCase();
 };
 
-export default makeRoomId;
+export const playerWinHoriz = (grid) => {
+  for (let i = 0; i < grid.length; i++) {
+    let j = 0;
+    if (grid[i][j] === 0) continue;
+    if (grid[i][j] === grid[i][j + 1] && grid[i][j + 1] === grid[i][j + 2]) {
+      return grid[i][j];
+    }
+  }
+};
+
+export const playerWinVert = (grid) => {
+  let i = 0;
+  for (let j = 0; j < grid[i].length; j++) {
+    if (grid[i][j] === 0) continue;
+    if (grid[i][j] === grid[i + 1][j] && grid[i + 1][j] === grid[i + 2][j]) {
+      return grid[i][j];
+    }
+  }
+};
+
+export const gameDraw = (grid) => {
+  let zero = false;
+  for (let i = 0; i < grid.length; i++) {
+    for (let j = 0; j < grid[i].length; j++) {
+      if (grid[i][j] === 0) zero = true;
+    }
+  }
+  if (zero) {
+    return false;
+  } else {
+    return true;
+  }
+};
+
+export const getWinningCell = (grid, pos) => {
+  let i = 0;
+  for (let j = 0; j < grid[i].length; j++) {
+    if (grid[i][j] === 0) continue;
+    if (grid[i][j] === grid[i + 1][j] && grid[i + 1][j] === grid[i + 2][j]) {
+      return grid[i][j];
+    }
+  }
+};

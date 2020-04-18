@@ -5,7 +5,7 @@ import { playerWinHoriz, playerWinVert } from "./grid.utils";
 
 import "./grid.styles.scss";
 
-const handleClick = (i, j) => {};
+
 
 const Grid = ({ grid }) => (
   <div className="grid">
