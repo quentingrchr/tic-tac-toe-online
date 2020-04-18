@@ -32,7 +32,7 @@ const GamePage = ({ location }) => {
   const [circleToggle, setCircleToggle] = useState(false);
   const [crossToggle, setCrossToggle] = useState(false);
 
-  const ENDPOINT = "http://localhost:5000/";
+  const ENDPOINT = "https://tic-tac-toe-online-quentingrch.herokuapp.com/";
 
   useEffect(() => {
     const { room, player } = queryString.parse(location.search);
