@@ -1,6 +1,6 @@
 .turns {
   .turn {
-    opacity: 10%;
+    opacity: 1;
     width: 100%;
     font-style: normal;
     font-size: 32px;
@@ -15,7 +15,7 @@
     }
 
     &.active {
-      opacity: 100%;
+      opacity: 1;
     }
   }
 }
