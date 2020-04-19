@@ -20,9 +20,9 @@ Do I really need to explain the rules ?
 
 ### Rounds
 
-You can plays as many rounds as you wish.
-When someone wins the round the winner will be written on the screen,
-to start the next round you just need to click anywhere on that same screen.
+You can play as many rounds as you wish.
+When someone wins the round the winner will be displayed on the screen,
+to start the next round you just need to click anywhere.
 
 ## How to install ?
 
