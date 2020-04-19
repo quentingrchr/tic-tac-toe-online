@@ -29,6 +29,22 @@ export const playerWinVert = (grid) => {
   }
 };
 
+export const playerWinDiag = (grid) => {
+  if (grid[0][0] === grid[1][1] && grid[1][1] === grid[2][2]) {
+    console.log("diag");
+
+    return grid[0][0];
+  } else if (grid[2][0] === grid[1][1] && grid[1][1] === grid[0][2]) {
+    console.log("diag");
+
+    return grid[2][0];
+  } else {
+    console.log("not diag");
+
+    return;
+  }
+};
+
 export const gameDraw = (grid) => {
   let zero = false;
   for (let i = 0; i < grid.length; i++) {

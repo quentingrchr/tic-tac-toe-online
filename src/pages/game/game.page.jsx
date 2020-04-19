@@ -11,7 +11,12 @@ import Turns from "../../components/turns/turns.component";
 import { ReactComponent as Cross96px } from "../../assets/cross-96px.svg";
 import { ReactComponent as Circle96px } from "../../assets/circle-96px.svg";
 import Scores from "../../components/scores/scores.component";
-import { playerWinHoriz, playerWinVert, gameDraw } from "../../utils";
+import {
+  playerWinHoriz,
+  playerWinVert,
+  playerWinDiag,
+  gameDraw,
+} from "../../utils";
 
 import "./game.styles.scss";
 
@@ -79,7 +84,11 @@ const GamePage = ({ location }) => {
   };
 
   useEffect(() => {
-    let playerWon = playerWinHoriz(grid) || playerWinVert(grid) || false;
+    let playerWon =
+      playerWinHoriz(grid) ||
+      playerWinVert(grid) ||
+      playerWinDiag(grid) ||
+      false;
     if (!playerWon) {
       if (gameDraw(grid)) {
         setDrawToggle(true);
