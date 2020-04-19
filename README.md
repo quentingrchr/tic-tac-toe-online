@@ -1,6 +1,6 @@
 # TIC TAC TOE ONLINE
 
-[![homepage]("./read-me-assets/home-page.png")](https://tic-tac-toe-online.netlify.app)
+[![homepage](readme-assets/home-page.png)](https://tic-tac-toe-online.netlify.app)
 [Go to website](https://tic-tac-toe-online.netlify.app)
 
 This is an online 2 players Tic Tac Toe game, made with React, Node.js and Socket.io.
@@ -12,7 +12,7 @@ This is an online 2 players Tic Tac Toe game, made with React, Node.js and Socke
 To start a private game the first player need to **create** and copy the ID of his room.
 The second player will have to paste the same ID in the **join** input.
 The creator of the room will always be cross.
-![homepage]("./read-me-assets/room-page.png")
+![homepage](readme-assets/room-page.png)
 
 ### Rules
 
