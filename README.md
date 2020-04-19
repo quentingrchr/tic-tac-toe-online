@@ -1,68 +1,45 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# TIC TAC TOE ONLINE
 
-## Available Scripts
+[![homepage]("./read-me-assets/home-page.png")](https://tic-tac-toe-online.netlify.app)
+[Go to website](https://tic-tac-toe-online.netlify.app)
 
-In the project directory, you can run:
+This is an online 2 players Tic Tac Toe game, made with React, Node.js and Socket.io.
 
-### `yarn start`
+## How to play ?
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Create a room
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+To start a private game the first player need to **create** and copy the ID of his room.
+The second player will have to paste the same ID in the **join** input.
+The creator of the room will always be cross.
+![homepage]("./read-me-assets/room-page.png")
 
-### `yarn test`
+### Rules
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Do I really need to explain the rules ?
 
-### `yarn build`
+### Rounds
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+You can plays as many rounds as you wish.
+When someone wins the round the winner will be written on the screen,
+to start the next round you just need to click anywhere on that same screen.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## How to install ?
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Clone the repository
+In the project directory,
+run:
 
-### `yarn eject`
+```shell
+yarn install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+to install all the dependencies,
+then run:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```shell
+yarn start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+to run the app in the development mode.
+Open http://localhost:3000 to view it in the browser.
