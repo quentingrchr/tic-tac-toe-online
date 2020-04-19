@@ -1,9 +1,9 @@
 # TIC TAC TOE ONLINE
 
+Client side of an online 2 players Tic Tac Toe game, made with **React**, **Node.js** and **Socket.io**.
+
 [![homepage](readme-assets/home-page.png)](https://tic-tac-toe-online.netlify.app)
 [Go to website](https://tic-tac-toe-online.netlify.app)
-
-This is an online 2 players Tic Tac Toe game, made with React, Node.js and Socket.io.
 
 ## How to play ?
 
